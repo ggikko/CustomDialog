@@ -3,67 +3,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
     android:minWidth="300dp"
-    android:orientation="vertical"
-    android:paddingTop="16dp">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/titleTextView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:lineSpacingExtra="4dp"
-        android:paddingBottom="18dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="18dp"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        tools:text="Hello, My name is Jihong Park, How r u man? " />
+        android:orientation="vertical"
+        android:paddingBottom="31dp"
+        android:paddingTop="31dp">
 
-    <TextView
-        android:id="@+id/subTitleTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:lineSpacingExtra="4dp"
-        android:paddingBottom="18dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="18dp"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        tools:text="asdnkfansdfadnslfksdnklf" />
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/ChDialogTextViewStyle"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/_000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="Title" />
 
-    <TextView
-        android:id="@+id/centerContentTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="#f7f7f7"
-        android:gravity="center"
-        android:paddingBottom="13dp"
-        android:paddingTop="13dp"
-        android:textColor="#005a96"
-        android:textSize="15sp"
-        tools:text="reason : what!?" />
+        <TextView
+            android:id="@+id/subTitleTextView"
+            style="@style/ChDialogTextViewStyle"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColor="@color/_000000"
+            android:textSize="17sp"
+            tools:text="Subtitle" />
 
-    <TextView
-        android:id="@+id/descriptionTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:lineSpacingExtra="4dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:textColor="#888888"
-        android:textSize="12sp"
-        tools:text="asdfasdfadsfsdfadsfadsfadsf\nasdfnkasdlfnadsfasdfnasdafdf" />
+        <TextView
+            android:id="@+id/contentTextView"
+            style="@style/ChDialogTextViewStyle"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColor="@color/_666666"
+            android:textSize="13sp"
+            tools:text="htmlText" />
+
+        <TextView
+            android:id="@+id/boxContentTextView"
+            style="@style/ChDialogTextViewStyle"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="#f7f7f7"
+            android:gravity="center"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:textColor="@color/_005a96"
+            android:textSize="15sp"
+            tools:text="reason : content" />
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/_dddddd"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            style="@style/ChDialogTextViewStyle"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="@color/_888888"
+            android:textSize="12sp"
+            tools:text="※ description 1\n※ description 2\n※ description 3\n※ description 4" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,10 +93,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#dddddd"
+            android:background="@color/_dddddd"
             android:gravity="center"
             android:text="no"
-            android:textColor="#000000"
+            android:textColor="@color/_000000"
             android:textSize="17sp" />
 
         <TextView
@@ -90,7 +107,7 @@
             android:background="#ffe400"
             android:gravity="center"
             android:text="ok"
-            android:textColor="#000000"
+            android:textColor="@color/_000000"
             android:textSize="17sp" />
 
     </LinearLayout>
